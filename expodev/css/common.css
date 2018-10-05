@@ -1,0 +1,252 @@
+/* common.css */
+@charset "utf-8";
+
+body {
+  /* 画像ファイルの指定 */
+ /*  background-image: url(../images/background-test.png);*/
+
+  /* 画像を常に天地左右の中央に配置 */
+  background-position: center center;
+  /* 画像をタイル状に繰り返し表示しない */
+  background-repeat: no-repeat;
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  background-size: cover;
+  /* 背景画像が読み込まれる前に表示される背景のカラー */
+  background-color: #464646;
+}
+
+span#lead{
+	font-weight: 700;
+	text-shadow: -2px -1px 15px rgb(54, 135, 225);
+}
+
+/* navbarのdiv containerの余白を打ち消す */
+div#top_navbar_container{
+	margin-left:-15px;
+	margin-right:-15px;
+}
+
+/* navbar 背景色を半透明に */
+.bg-light{
+	opacity: 0.75;
+}
+/* cardを中央によせて並べる */
+.card-unit-center {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+}
+
+
+/* footer*/
+footer{
+    margin:20px auto;
+    padding-top:20px;
+}
+footer:before{
+    content:"";
+    position:absolute;
+    left:0;
+    display:block;
+    margin-top:-20px;
+    width:100%;
+    border-top:1px solid #AEAEAE;
+}
+
+/* pagetopボタン　*/
+#page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 77%;
+}
+#page-top a {
+    background: #666;
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    padding: 30px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+    opacity: .75;
+}
+#page-top a:hover {
+    text-decoration: none;
+    background: #999;
+}
+
+
+/* navまわり */
+.navbar.transparent.navbar-inverse .navbar-inner {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+a:link { color: #CCCDCD; }
+a:visited { color: #CCCDCD; }
+a:hover { color: #FAFBFB; }
+a:active { color: #CCCDCD; }
+
+a{
+	text-decoration: none !important;
+	transition: color .3s !important;
+}
+
+
+/* !Reseting
+---------------------------------------------------------- */
+body,div,pre,p,blockquote,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,th,td{margin:0;padding:0;}input,textarea{margin:0;font-size:100%;}label{cursor:pointer;}table{border-collapse:collapse;border-spacing:0;font-size:100%;}fieldset,img{border:0;}img{vertical-align:top;}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal;}ol,ul{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:bold;}q:after,q:before{content:'';}input{/* outline:none;*/ }abbr,acronym{border:0;}
+
+/* !Reset Module */
+.reset div,.reset dl,.reset dt,.reset dd,.reset ul,.reset ol,.reset li,.reset h1,.reset h2,.reset h3,.reset h4,.reset h5,.reset h6,.reset pre,.reset form,.reset fieldset,.reset p,.reset blockquote,.reset th,.reset td{margin:0;padding:0;}.reset input,.reset textarea{margin:0;font-size:100%;}.reset table{border-collapse:collapse;border-spacing:0;font-size:100%;}.reset fieldset,.reset img,.reset abbr,.reset acronym{border:0;}.reset address,.reset caption,.reset cite,.reset code,.reset dfn,.reset em,.reset th,.reset var{font-style:normal;font-weight:normal;}.reset ol,.reset ul{list-style:none;}.reset caption,.reset th{text-align:left;}.reset h1,.reset h2,.reset h3,.reset h4,.reset h5,.reset h6{font-size:100%;font-weight:normal;}.reset a,.reset input{/* outline:none;*/ }.reset q:after,.reset q:before{content:'';}
+
+
+/* !Layout
+---------------------------------------------------------- */
+html {
+    overflow-y: scroll;
+   font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* base font */
+body {
+	font-family: 'Assistant', sans-serif, 'Roboto', sans-serif, "MS PGothic" , Avenir, 'Open Sans', 'Helvetica Neue', helvetica, arial, Verdana, Roboto, sans-serif;
+	font-size: 14px;
+	font-size: 1.4rem;
+	-webkit-text-size-adjust: none;
+	line-height: 1.6;
+	color: #eee;
+}
+.row{
+margin-left:10px;
+margin-right:10px;
+}
+
+
+@charset "UTF-8";
+
+span.f400{font-size:400%;}
+span.f300{font-size:300%;}
+span.f275{font-size:275%;}
+span.f250{font-size:250%;}
+span.f225{font-size:225%;}
+span.f200{font-size:200%;}
+span.f175{font-size:175%;}
+span.f160{font-size:160%;}
+span.f150{font-size:150%;}
+span.f140{font-size:140%;}
+span.f125{font-size:125%;}
+span.f120{font-size:120%;}
+span.f115{font-size:115%;}
+span.f110{font-size:110%;}
+span.f105{font-size:105%;}
+span.f100{font-size:100%;}
+span.f95{font-size:95%;}
+span.f90{font-size:90%;}
+span.f85{font-size:85%;}
+span.f80{font-size:80%;}
+span.f75{font-size:75%;}
+span.f70{font-size:70%;}
+span.f65{font-size:65%;}
+span.f60{font-size:60%;}
+span.f55{font-size:55%;}
+span.f50{font-size:50%;}
+
+div.hauto{height: auto;}
+div.h50{height:  50px;}
+div.h100{height: 100px;}
+div.h150{height: 150px;}
+div.h200{height: 200px;}
+div.h250{height: 250px;}
+div.h275{height: 275px;}
+div.h250{height: 250px;}
+div.h300{height: 300px;}
+div.h350{height: 350px;}
+div.h400{height: 400px;}
+div.h450{height: 450px;}
+div.h500{height: 500px;}
+div.h550{height: 550px;}
+div.h600{height: 600px;}
+div.h650{height: 650px;}
+div.h700{height: 700px;}
+div.h730{height: 730px;}
+div.h750{height: 750px;}
+div.h800{height: 800px;}
+div.h850{height: 850px;}
+div.h900{height: 900px;}
+div.h950{height: 950px;}
+div.h1000{height: 1000px;}
+div.h1150{height: 1150px;}
+div.h1200{height: 1200px;}
+div.h1300{height: 1300px;}
+div.h1350{height: 1350px;}
+div.h1400{height: 1400px;}
+div.h1500{height: 1500px;}
+div.h2000{height: 2000px;}
+div.h2100{height: 2100px;}
+div.h2200{height: 2200px;}
+div.h2400{height: 2400px;}
+
+
+div.minh50{min-height:  50px;}
+div.minh100{min-height: 100px;}
+div.minh150{min-height: 150px;}
+div.minh200{min-height: 200px;}
+div.minh250{min-height: 250px;}
+div.minh300{min-height: 300px;}
+div.minh350{min-height: 350px;}
+div.minh400{min-height: 400px;}
+div.minh450{min-height: 450px;}
+div.minh500{min-height: 500px;}
+div.minh550{min-height: 550px;}
+div.minh600{min-height: 600px;}
+div.minh650{min-height: 650px;}
+div.minh700{min-height: 700px;}
+div.minh750{min-height: 750px;}
+div.minh800{min-height: 800px;}
+div.minh850{min-height: 850px;}
+div.minh900{min-height: 900px;}
+div.minh950{min-height: 950px;}
+div.minh1000{min-height: 1000px;}
+div.minh1200{min-height: 1200px;}
+div.minh1350{min-height: 1350px;}
+div.minh1400{min-height: 1400px;}
+div.minh2000{min-height: 2000px;}
+div.minh2200{min-height: 2200px;}
+
+div.maxh2000{max-height: 2000px;}
+div.maxh2200{max-height: 2200px;}
+
+.w50{width: 50px;}
+.w100{width: 100px;}
+.w200{width: 200px;}
+.w300{width: 300px;}
+.w400{width: 400px;}
+.w500{width: 500px;}
+.w600{width: 600px;}
+.w700{width: 700px;}
+.w800{width: 800px;}
+
